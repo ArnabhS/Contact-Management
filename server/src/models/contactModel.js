@@ -17,7 +17,8 @@ const contactSchema = new mongoose.Schema({
     },
     phoneNumber:{ 
         type: String, 
-        required: true 
+        required: true,
+        unique:true 
     },
     company:{
         type: String 
